@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- LINKS -->
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bondi.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- EMAIL JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.xyz/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("6hOdN2StIEwQADtUO");
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header id="home">
+        <div class="container">
+            <div class="header_content">
+                <div class="logo">
+                    <a href="#home"><img src="images/LOGO BG.png" alt="Logo"></a>
+                    <div class="div_listIcon" onclick="addclassList()">
+                        <i class="list_icon fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+                <nav>
+                    <div class="content_nav">
+                        <ul>
+                            <li onclick="removeclassList()"><a href="#home">Home</a></li>
+                            <li onclick="removeclassList()"><a href="#about">About</a></li>
+                            <li onclick="removeclassList()"><a href="#skills">Skills</a></li>
+                            <li onclick="removeclassList()"><a href="#projects">Projects</a></li>
+                            <li onclick="removeclassList()"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- =================================================== -->
+    <!-- START HOME SECTION -->
+    <section>
+        <div class="container home_section">
+            <div class="home_content">
+                <div class="home_info">
+                    <p class="hi">HI, I'm</p>
+                    <p class="home_info_animation"></p>
+                    <p class="desc">I can design and develope alot of websites, Designed alot of projects I will show it
+                        to you, My
+                        experience in the field helps me to some extent to do what I want.
+                    </p>
+                    <a href="#about"><button><span class="me-2">More about me</span> <i
+                                class="icon fa-solid fa-angles-down"></i></button></a>
+                </div>
+                <div class="home_img bg-dark">
+                    <img src="images/kero.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HOME SECTION -->
+    <!-- ==================================================== -->
+    <!-- START SECTION ABOUT -->
+    <section class="about">
+        <h2 class="text-center about_head" id="about">About Me</h2>
+        <div class="des_about">
+            <i class="icon_descabout fa-solid fa-square-check"></i>
+            I'm kerolos khairy. I'm 20 years old still studying at faculty of engineering at Kafr El-Sheikh, electrical
+            department.
+            <br>
+            <i class="icon_descabout fa-solid fa-square-check"></i>
+            I started my learning about web track at March 2023.
+            <br>
+            <i class="icon_descabout fa-solid fa-square-check"></i>
+            I'm now a Front End developer.
+            <br>
+            <i class="icon_descabout fa-solid fa-square-check"></i>
+            At June started training at SEF academy as a web designer and finished it in August.
+            <br>
+            <i class="icon_descabout fa-solid fa-square-check"></i>
+            My ambition is to be a brilliant programmer (Web Developer) and always help in the development of the place
+            I am in.
+            <br>
+            <i class="icon_descabout fa-solid fa-square-check"></i>
+            I love teamwork and I also love sharing what I learned with my friends.
+            <br>
+            <i class="icon_descabout fa-solid fa-square-check"></i>
+            I am good at working under pressure.
+            <br>
+            <i class="icon_descabout fa-solid fa-square-check"></i>
+            I love sports, reading and continuous learning.
+        </div>
+    </section>
+    <!-- END SECTION ABOUT -->
+    <!-- ========================================================= -->
+    <!-- START SECTION SKILLS -->
+    <section>
+        <h2 class="text-center" id="skills">My Skills</h2>
+        <div class="des_skills">
+            <div class="d-flex align-items-center pb-3">
+                <i class="skills_icon fa-brands fa-html5"></i>
+                <span class="text">html & html5</span>
+            </div>
+            <div class="d-flex align-items-center pb-3">
+                <i class="skills_icon fa-brands fa-css3-alt" style="color: blue;"></i>
+                <span class="text">css</span>
+                <span class="and_sign">&</span>
+                <i class="skills_icon fa-brands fa-css3" style="color: blueviolet;"></i>
+                <span class="text">css3</span>
+            </div>
+            <div class="d-flex align-items-center pb-3">
+                <i class="skills_icon fa-brands fa-bootstrap me-1" style="color: brown;"></i>
+                <span class="text">bootstrap</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="skills_icon fa-brands fa-square-js me-1" style="color: yellow;"></i>
+                <span class="text">javaScript</span>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- END SECTION SKILLS -->
+    <!-- =========================================================== -->
+    <!-- START SECTION PROJECTS -->
+    <section>
+        <h2 class="text-center" id="projects">My Projects & Tasks</h2>
+        <div class="container ">
+            <div class="project_content">
+                <div class="buttoms pt-3 pb-4">
+                    <button onclick="drawAllProducts()" id="all_projects" class="project_buttom me-2"
+                        style="background-color: #1a5d1aab;">All
+                    </button>
+                    <button onclick="drawHtmlProjects()" id="html_css_projects" class="project_buttom me-2">html &
+                        css</button>
+                    <button onclick="drawBootProjects()" id="bootstrap_projects"
+                        class="project_buttom me-2">Bootstrap</button>
+                    <button onclick="drawJSProjects()" id="js_projects" class="project_buttom">javaScript</button>
+                </div>
+                <div class="project_content_div"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION PROJECTS -->
+    <!-- ============================================================= -->
+    <!-- START SECTION CONTACT US -->
+    <section>
+        <h2 class="text-center" id="contact">Contact Me</h2>
+        <div class="container">
+            <div class="contact_content">
+                <div class="contact_content_inputs">
+                    <input class="text-light" type="text" placeholder="Enter your full name" required id="name">
+                    <input type="tel" placeholder="Enter your phone number" id="tel">
+                    <input type="email" placeholder="Enter your email" required id="email">
+                    <textarea class="textarea" placeholder="Tell me your message" id="message"></textarea>
+                    <input type="submit" id="submit" onclick="sendMessage()">
+                </div>
+
+                <div class="img">
+                    <img src="images/Call BG.png" alt="callImg">
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-success alert_sure">
+            <p>thanks for your message, It already sent.</p>
+            <button class="ok">ok</button>
+        </div>
+    </section>
+    <!-- END SECTION CONTACT US -->
+    <!-- ================================================================== -->
+    <!-- START FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <div class="logo_footer">
+                    <a href="#home"><img src="images/LOGO BG.png" alt="logo"></a>
+                </div>
+                <div class="footer_details text-light">
+                    <p class="mypro_footer">My Portfolio</p>
+                    <div class="all_info">
+                        <div class="header_footer">
+                            <a class="me-4" href="#home"><span>Home</span></a>
+                            <a class="me-4" href="#about"><span>About</span></a>
+                            <a class="me-4" href="#skills"><span>Skills</span></a>
+                            <a class="me-4" href="#projects"><span>Projects</span></a>
+                            <a href="#contact"><span>Contact</span></a>
+                        </div>
+                        <div class="tel_mail">
+                            <a
+                                href="https://api.whatsapp.com/send/?phone=201032910697&text&type=phone_number&app_absent=0">
+                                <i class="icon fa-brands fa-whatsapp me-2 text-success"></i>
+                                <span>+20 103 291 0697</span>
+                            </a> <br>
+                            <a href="https://kyrlskhyry80@gmail.com">
+                                <i class="icon fa-regular fa-envelope me-2 text-danger"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100" style="height: 1px; background-color: #fff;"></div>
+                <div class="copy_right text-light">
+                    <div class="my_name">
+                        <span>kerolos khairy &copy; All right are reserved</span>
+                    </div>
+                    <div class="icons">
+                        <a style="color: #1d7199;" class="me-2"
+                            href="https://www.linkedin.com/in/kerolos-khairy-a6673625a/"><i
+                                class="icon fa-brands fa-linkedin-in"></i></a>
+                        <a style="color: #4267B2;" class="me-2"
+                            href="https://www.facebook.com/profile.php?id=100069349486598"><i
+                                class="icon fa-solid fa-f"></i></a>
+                        <a style="color: gray;" class="me-2"
+                            href="https://github.com/kerllouskhairy987?tab=repositories"><i
+                                class="icon fa-brands fa-github"></i></a>
+                        <a class="text-success" href="https://wa.me/+0201032910697"><i
+                                class="icon fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- START SCROLL TO TOP -->
+    <div class="scroll">
+        <div class="scroll_top">
+            <a href="#home"><i class="icon fa-solid fa-angles-up"></i></a>
+        </div>
+    </div>
+    <!-- END SCROLL TO TOP -->
+    <!-- ===================================================== -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
